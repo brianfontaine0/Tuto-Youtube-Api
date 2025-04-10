@@ -44,7 +44,7 @@ const generateTypes = () => {
 
     if (!Array.isArray(data) || data.length === 0) continue;
 
-    const baseName = path.basename(file, '.json'); // ex: posts
+    const baseName = path.basename(file, '.json') + 'Type';
     const example = data[0];
     interfaces.push(generateInterface(baseName, example));
   }
