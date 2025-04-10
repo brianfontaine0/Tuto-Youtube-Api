@@ -1,0 +1,102 @@
+[
+  {
+    "id": "a97ed60f-deea-455b-84a4-d642b64a7daf",
+    "userId": "06fc9aa9-7308-400d-8b3d-235e66689845",
+    "theme": "dark",
+    "language": "fr",
+    "notifications": true,
+    "privacy": "private",
+    "twoFactorAuth": true,
+    "dataSharing": true
+  },
+  {
+    "id": "4980315a-c4bf-4fd2-84ed-91aa8c6bcf98",
+    "userId": "35e83460-253f-4728-856b-bffdbd02067f",
+    "theme": "dark",
+    "language": "es",
+    "notifications": false,
+    "privacy": "public",
+    "twoFactorAuth": true,
+    "dataSharing": false
+  },
+  {
+    "id": "ba03b65b-b382-4601-806a-4b4ab1525b75",
+    "userId": "36965bae-b7de-403d-9098-97c68e4a7517",
+    "theme": "light",
+    "language": "fr",
+    "notifications": true,
+    "privacy": "public",
+    "twoFactorAuth": true,
+    "dataSharing": false
+  },
+  {
+    "id": "9d50cbb4-85a2-42da-a660-c1ed69dc2596",
+    "userId": "ca7438ae-2c4e-4df6-87bb-0b193d5bae6a",
+    "theme": "light",
+    "language": "en",
+    "notifications": true,
+    "privacy": "public",
+    "twoFactorAuth": true,
+    "dataSharing": true
+  },
+  {
+    "id": "fbb536cb-de47-4d71-beaf-8c020ba085d8",
+    "userId": "800888e0-9086-4ce7-ba52-f2cfa52acbfb",
+    "theme": "light",
+    "language": "es",
+    "notifications": true,
+    "privacy": "public",
+    "twoFactorAuth": false,
+    "dataSharing": false
+  },
+  {
+    "id": "372d8cf6-7bec-4b84-a0fe-11426276f553",
+    "userId": "e46a4649-3c6e-4a0d-ba30-8b0af097ccc8",
+    "theme": "dark",
+    "language": "en",
+    "notifications": true,
+    "privacy": "private",
+    "twoFactorAuth": false,
+    "dataSharing": true
+  },
+  {
+    "id": "495be592-03d1-4415-a5ba-d0bbd3c1555e",
+    "userId": "01efee64-cd08-46ae-9afc-d4c85acf47b1",
+    "theme": "dark",
+    "language": "fr",
+    "notifications": true,
+    "privacy": "public",
+    "twoFactorAuth": false,
+    "dataSharing": true
+  },
+  {
+    "id": "bc64762d-1e86-456e-9bcf-c64ca6d3b77e",
+    "userId": "9be4ff1f-23b8-4346-89c6-563b407b35eb",
+    "theme": "light",
+    "language": "fr",
+    "notifications": false,
+    "privacy": "private",
+    "twoFactorAuth": false,
+    "dataSharing": true
+  },
+  {
+    "id": "3a6731a9-e971-4302-8d01-6527c66e7526",
+    "userId": "5f13450f-a4b8-4480-8dbd-7402dd6b34ec",
+    "theme": "dark",
+    "language": "en",
+    "notifications": false,
+    "privacy": "private",
+    "twoFactorAuth": false,
+    "dataSharing": false
+  },
+  {
+    "id": "69ca5e92-0dc1-43ea-8c02-ea452fd0ab8c",
+    "userId": "4c43d7ac-9267-4d0a-a1f9-6af77c434f6b",
+    "theme": "light",
+    "language": "es",
+    "notifications": false,
+    "privacy": "public",
+    "twoFactorAuth": false,
+    "dataSharing": false
+  }
+]
