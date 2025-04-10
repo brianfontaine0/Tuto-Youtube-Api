@@ -26,3 +26,8 @@ lerna-debug.log*
 
 # misc
 .DS_Store
+
+
+# data (Vous devez les migrer vous même)
+data/*.json
+src/interfaces/*.ts

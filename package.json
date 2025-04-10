@@ -2,13 +2,17 @@
   "name": "youtube-api-tuto",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/index.ts",
+    "migrate": "tsx migration/migration.ts",
+    "generate:types" : "tsx scripts/generate-interface.ts",
+    "help:project": "tsx scripts/help.ts"
   },
   "dependencies": {
     "@hono/node-server": "^1.14.0",
     "hono": "^4.7.5"
   },
   "devDependencies": {
+    "@faker-js/faker": "^9.6.0",
     "@types/node": "^20.11.17",
     "tsx": "^4.7.1"
   }
