@@ -1,0 +1,12 @@
+{
+    "$schema": "node_modules/wrangler/config-schema.json",
+    "name": "tuto-youtube-api-deploy",
+    "compatibility_date": "2025-03-27",
+    "main": "src/index.ts",
+    "compatibility_flags": [
+        "nodejs_compat"
+    ],
+    "vars": {
+        "DATABASE_URL": "prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiMjYwY2Y4ZGQtNzg4Ny00YmJkLTk0YWMtZjlhODAyNzE0YjIxIiwidGVuYW50X2lkIjoiMTU1NWQ0ZTI4MGYzODVkZjRhZDhmOWZkNTFhOGI2ZGVhNTY2YjNkMzg1NjhjZDg4ZGE1ZjIzOGNiMGJiNTQwNCIsImludGVybmFsX3NlY3JldCI6IjBiNDI4YmM1LTExMDItNGYwOS1iYzJhLTQ0ZWY4NTc5OWExNSJ9.v_ISrEZzwBiv_Yz8skpM-zfuae8Q5geD-ho1BMPR-Fw"
+    }
+}

@@ -26,3 +26,17 @@ lerna-debug.log*
 
 # misc
 .DS_Store
+
+*.pem
+*.p12
+
+# coverage
+coverage/
+*.lcov
+*.lcov.info
+
+dist/
+build/
+
+# prisma migrations
+prisma/migrations/

@@ -1,25 +1,24 @@
-import fs from 'fs';
-import path from 'path';
-import type { UsersType } from '../interfaces/types.js';
+import { PrismaClient } from '@prisma/client/edge';
+import { getPrismaClient } from '../lib/prisma.js';
+// import prisma from "../lib/prisma.js";
 
 class UserModel {
-  private filePath: string;
+  private dataBase: ReturnType<typeof getPrismaClient>;
 
-  constructor(){
-    this.filePath = path.join('./data/users.json');
+  constructor(env: { DATABASE_URL: string }) {
+    this.dataBase = getPrismaClient(env);
   }
 
-  public getAllUsers() : UsersType[]{
-    const data = fs.readFileSync(this.filePath, 'utf-8');
-    return JSON.parse(data);
+  public async getAllUsers() {
+    return this.dataBase.users.findMany();
   }
 
-  public getUserById(id: string) : UsersType | null {
-    const users = this.getAllUsers();
-    const user = users.find((user) => user?.id == id);
-    return user || null;
+  public async getUserById(id: string) {
+    return this.dataBase.users.findUnique({
+      where: { id },
+      include: { Posts: true }, // Inclut les posts associés à l'utilisateur
+    });
   }
-
 }
 
 export default UserModel;

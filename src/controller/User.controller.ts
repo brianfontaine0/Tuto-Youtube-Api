@@ -1,32 +1,18 @@
-import type { UsersType } from "../interfaces/types.js";
-import UserModel from "../models/User.model.js";
+import UserModel from '../models/User.model.js';
 
 class UserController {
-  private UserModel: UserModel;
-  constructor() {
-    this.UserModel = new UserModel();
+  private userModel: UserModel;
+
+  constructor(env: { DATABASE_URL: string }) {
+    this.userModel = new UserModel(env);
   }
 
-  public getAllUsers(): UsersType[] {
-    const data = this.UserModel.getAllUsers();
-    return data;
+  public async getAllUsers() {
+    return await this.userModel.getAllUsers();
   }
 
-  public getUserById(id: string) {
-    const data = this.UserModel.getUserById(id);
-
-    if (!data) {
-      return {
-        status: 404,
-        message: "User not found",
-      };
-    }
-
-    return {
-      status: 200,
-      message: "User fetched successfully",
-      user: data,
-    };
+  public async getUserById(id: string) {
+    return await this.userModel.getUserById(id);
   }
 }
 

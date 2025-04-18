@@ -4,6 +4,8 @@
     "module": "NodeNext",
     "strict": true,
     "verbatimModuleSyntax": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
     "types": [
       "node"
